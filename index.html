@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="navbar bg-base-100">
+    <div class="navbar-start">
+        <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a href="http://10.4.55.123/~gabby/index.html">Home</a></li>
+                <li><a href="http://10.4.55.123/~gabby/Deploy/deploy.html">Deploy</a></li>
+                <li><a href="http://10.4.55.123/~gabby/intro/IntroHtml.html">Intro HTML</a></li>
+            </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl">Gabby</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a href="http://10.4.55.123/~gabby/index.html">Home</a></li>
+            <li><a href="http://10.4.55.123/~gabby/Deploy/deploy.html">Deploy</a></li>
+            <li><a href="http://10.4.55.123/~gabby/intro/IntroHtml.html">Intro HTML</a></li>
+        </ul>
+    </div>
+    <div class="navbar-end">
+        <div class="avatar">
+            <div class="w-24 rounded-full">
+                <img src="img/iislogo.gif" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hero min-h-screen" style="background-image: url(img/code.jpg);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+            <p class="mb-5">Benvenuti nella mia porzione di server :)</p>
+            <button class="btn" onclick="my_modal_1.showModal()">saluta mio fratello Giuseppe</button>
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                    <img src="img/giuse.jpg" width="500" height="200">
+                    <h3 class="font-bold text-center text-black">MONELLAH! MONELLAH! SE MI CAPITI SOTTO LE MIE GRINFIE...</h3>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Saluta</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+    </div>
+</div>
+<div class="hero min-h-screen bg-base-200">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+        <div>
+            <h1 class="text-5xl font-bold text-center">Progetti:</h1>
+            <br>
+            <div class="carousel carousel-center rounded-box">
+                <div class="carousel-item">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <div class="card-body">
+                            <h2 class="card-title">DEPLOY!</h2>
+                            <p>Scopri come configurare il deployment di un progetto su Winnie</p>
+                            <div class="card-actions justify-end">
+                                <a href="Deploy/deploy.html"><button class="btn btn-primary">Learn More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel carousel-center rounded-box">
+                <div class="carousel-item">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <div class="card-body">
+                            <h2 class="card-title">INTRODUZIONE html</h2>
+                            <p>Scopri le basi dell'html</p>
+                            <div class="card-actions justify-end">
+                                <a href="intro/IntroHtml.html"><button class="btn btn-primary">Learn More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hero min-h-screen bg-base-200" style="background-color: cornflowerblue">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+        <div>
+            <h1 class="text-5xl font-bold text-center">Fine della scuola &#127881:</h1>
+            <br>
+            <iframe src="https://free.timeanddate.com/countdown/i91t1df2/n5565/cf12/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fn3/fs100/szw1500/szh632/iso2024-06-08T12:00:00/pd2" allowtransparency="true" frameborder="0" width="534" height="126"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
